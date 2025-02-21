@@ -15,6 +15,9 @@ read salary
 if [ $salary -lt 30000 ];
 then
 echo "No Tax"
+elif [ $salary -eq 30000 ];
+then
+echo "5% Tax"
 elif [ $salary -gt 30000 -a $salary -le 40000 ];
 then
 echo "10% Tax"
